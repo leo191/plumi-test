@@ -1,0 +1,8 @@
+language: python
+
+before_install:
+  - curl -fsSL https://get.pulumi.com/ | sh
+  - export PATH=$PATH:$HOME/.pulumi/bin
+script:
+  - pip install --no-cache-dir -r requirements.txt
+  - pulumi up
