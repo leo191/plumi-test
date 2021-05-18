@@ -6,4 +6,5 @@ before_install:
 script:
   - pip install --no-cache-dir -r requirements.txt
   - pulumi login --non-interactive
+  - pulumi stack select dev
   - pulumi up --yes
